@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://kaifpanki786-max.github.io/khan-consulting-website/sitemap.xml

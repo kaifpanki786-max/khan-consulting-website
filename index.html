@@ -1,322 +1,1776 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>KHAN Consulting | Web3 Business Development & Research</title>
+  <title>KHAN Consulting | Web3 Business Development, Research & USDT Services</title>
 
-<meta name="description" content="KHAN Consulting provides Web3 business development, market research, partnership research, lead generation and business outreach services.">
+  <meta name="description"
+        content="KHAN Consulting provides Web3 business development, market research, partnership research, lead generation, business outreach and USDT buy and sell inquiry support.">
 
-<meta name="keywords" content="Web3 business development, Web3 consulting, crypto consulting, market research, partnership research, lead generation, business development">
+  <meta name="keywords"
+        content="Web3 business development, Web3 consulting, crypto consulting, market research, partnership research, lead generation, business development, USDT buy, USDT sell, USDT exchange">
 
-<meta name="author" content="KHAN Consulting">
-<meta name="robots" content="index, follow">
+  <meta name="author" content="KHAN Consulting">
+  <meta name="robots" content="index, follow">
 
-<link rel="canonical" href="https://kaifpanki786-max.github.io/khan-consulting-website/">
+  <!-- Canonical URL -->
+  <link rel="canonical"
+        href="https://kaifpanki786-max.github.io/khan-consulting-website/">
 
-<meta property="og:title" content="KHAN Consulting | Web3 Business Development">
-<meta property="og:description" content="Strategic Web3 business development, research, partnerships and digital asset industry insights.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://kaifpanki786-max.github.io/khan-consulting-website/">
-<meta property="og:site_name" content="KHAN Consulting">
+  <!-- Open Graph -->
+  <meta property="og:title"
+        content="KHAN Consulting | Web3 Business Development & USDT Services">
 
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="KHAN Consulting | Web3 Business Development">
-<meta name="twitter:description" content="Web3 business development, market research, partnerships and lead generation.">
+  <meta property="og:description"
+        content="Strategic Web3 business development, research, partnerships, digital asset insights and USDT buy and sell inquiry support.">
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "KHAN Consulting",
-  "url": "https://kaifpanki786-max.github.io/khan-consulting-website/",
-  "description": "KHAN Consulting provides Web3 business development, market research, partnership research, lead generation and business outreach services.",
-  "email": "khan.digitalexchange@gmail.com",
-  "areaServed": "Worldwide",
-  "serviceType": [
-    "Web3 Business Development",
-    "Market Research",
-    "Partnership Research",
-    "Lead Generation",
-    "Business Outreach"
-  ]
-}
-</script>
+  <meta property="og:type" content="website">
 
-<link rel="stylesheet" href="styles.css">
+  <meta property="og:url"
+        content="https://kaifpanki786-max.github.io/khan-consulting-website/">
+
+  <meta property="og:site_name" content="KHAN Consulting">
+
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary">
+
+  <meta name="twitter:title"
+        content="KHAN Consulting | Web3 Business Development">
+
+  <meta name="twitter:description"
+        content="Web3 business development, market research, partnerships, lead generation and USDT buy and sell inquiry support.">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "KHAN Consulting",
+    "url": "https://kaifpanki786-max.github.io/khan-consulting-website/",
+    "description": "KHAN Consulting provides Web3 business development, market research, partnership research, lead generation, business outreach, digital asset industry insights and USDT buy and sell inquiry support.",
+    "email": "khan.digitalexchange@gmail.com",
+    "areaServed": "Worldwide",
+    "serviceType": [
+      "Web3 Business Development",
+      "Market Research",
+      "Partnership Research",
+      "Lead Generation",
+      "Business Outreach",
+      "Digital Asset Industry Insights",
+      "USDT Buy and Sell Inquiry Support"
+    ],
+    "sameAs": [
+      "https://t.me/KhanUSDTExchange"
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    :root {
+      --bg:#071018;
+      --surface:#0d1822;
+      --surface-2:#111f2b;
+      --text:#f4f7fa;
+      --muted:#a9b5c0;
+      --line:rgba(255,255,255,.10);
+      --accent:#67e8f9;
+      --accent-2:#22d3ee;
+      --max:1180px;
+      --radius:18px;
+    }
+
+    * {
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
+
+    html {
+      scroll-behavior:smooth;
+    }
+
+    body {
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,
+      "Segoe UI",sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.65;
+      overflow-x:hidden;
+    }
+
+    a {
+      color:inherit;
+      text-decoration:none;
+    }
+
+    button,input,select,textarea {
+      font:inherit;
+    }
+
+    .container {
+      width:min(calc(100% - 40px),var(--max));
+      margin:auto;
+    }
+
+    header {
+      position:sticky;
+      top:0;
+      z-index:1000;
+      backdrop-filter:blur(18px);
+      background:rgba(7,16,24,.86);
+      border-bottom:1px solid var(--line);
+    }
+
+    .nav-wrap {
+      min-height:76px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:24px;
+    }
+
+    .logo {
+      font-size:1.15rem;
+      font-weight:800;
+      letter-spacing:.04em;
+    }
+
+    .logo span {
+      color:var(--accent);
+      font-weight:500;
+    }
+
+    nav {
+      display:flex;
+      align-items:center;
+      gap:28px;
+    }
+
+    nav a {
+      color:var(--muted);
+      font-size:.94rem;
+      transition:.2s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color:var(--text);
+    }
+
+    #menu {
+      display:none;
+      border:0;
+      background:transparent;
+      color:var(--text);
+      font-size:1.5rem;
+      cursor:pointer;
+    }
+
+    .hero {
+      padding:120px 0 100px;
+      position:relative;
+    }
+
+    .hero:before {
+      content:"";
+      position:absolute;
+      width:520px;
+      height:520px;
+      right:-180px;
+      top:-120px;
+      background:radial-gradient(
+        circle,
+        rgba(34,211,238,.16),
+        transparent 68%
+      );
+      pointer-events:none;
+    }
+
+    .eyebrow,
+    small {
+      color:var(--accent);
+      letter-spacing:.14em;
+      font-weight:700;
+      font-size:.76rem;
+    }
+
+    h1 {
+      max-width:900px;
+      margin:18px 0 22px;
+      font-size:clamp(2.7rem,7vw,5.8rem);
+      line-height:1.02;
+      letter-spacing:-.055em;
+    }
+
+    h1 b {
+      color:var(--accent);
+    }
+
+    .hero p {
+      max-width:720px;
+      color:var(--muted);
+      font-size:1.15rem;
+    }
+
+    .actions {
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:32px;
+    }
+
+    .btn {
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:48px;
+      padding:0 20px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      cursor:pointer;
+      transition:.2s;
+      font-weight:700;
+    }
+
+    .btn-primary {
+      background:var(--accent);
+      color:#031018;
+      border-color:var(--accent);
+    }
+
+    .btn-primary:hover {
+      transform:translateY(-2px);
+      background:#a5f3fc;
+    }
+
+    .btn-secondary {
+      background:transparent;
+      color:var(--text);
+    }
+
+    .btn-secondary:hover {
+      background:rgba(255,255,255,.06);
+    }
+
+    section {
+      padding:92px 0;
+      border-top:1px solid var(--line);
+    }
+
+    .section-head {
+      max-width:760px;
+      margin-bottom:42px;
+    }
+
+    h2 {
+      margin-top:10px;
+      font-size:clamp(2rem,4vw,3.3rem);
+      line-height:1.1;
+      letter-spacing:-.035em;
+    }
+
+    .section-head p,
+    section > .container > p {
+      color:var(--muted);
+      max-width:760px;
+    }
+
+    .grid {
+      display:grid;
+      gap:18px;
+    }
+
+    .grid-3 {
+      grid-template-columns:repeat(3,1fr);
+    }
+
+    .grid-4 {
+      grid-template-columns:repeat(4,1fr);
+    }
+
+    .card {
+      padding:28px;
+      background:linear-gradient(
+        145deg,
+        var(--surface),
+        var(--surface-2)
+      );
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+    }
+
+    .card:hover {
+      border-color:rgba(103,232,249,.35);
+      transform:translateY(-3px);
+      transition:.2s;
+    }
+
+    .number {
+      color:var(--accent);
+      font-size:.78rem;
+      font-weight:800;
+    }
+
+    h3 {
+      margin:8px 0 10px;
+      font-size:1.12rem;
+    }
+
+    .card p {
+      color:var(--muted);
+      font-size:.95rem;
+    }
+
+    .dark {
+      background:#050c13;
+    }
+
+    .about-grid {
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:28px;
+      align-items:start;
+    }
+
+    .checklist {
+      display:grid;
+      gap:12px;
+      margin-top:22px;
+    }
+
+    .check {
+      display:flex;
+      gap:12px;
+      color:var(--muted);
+    }
+
+    .check strong {
+      color:var(--text);
+    }
+
+    .check::before {
+      content:"✓";
+      color:var(--accent);
+      font-weight:900;
+    }
+
+    .steps {
+      counter-reset:step;
+    }
+
+    .step {
+      position:relative;
+      padding-left:62px;
+    }
+
+    .step:before {
+      counter-increment:step;
+      content:counter(step);
+      position:absolute;
+      left:0;
+      top:0;
+      width:40px;
+      height:40px;
+      display:grid;
+      place-items:center;
+      border-radius:50%;
+      background:rgba(103,232,249,.10);
+      color:var(--accent);
+      border:1px solid rgba(103,232,249,.25);
+      font-weight:800;
+    }
+
+    .faq {
+      display:grid;
+      gap:12px;
+      max-width:900px;
+    }
+
+    details {
+      border:1px solid var(--line);
+      border-radius:14px;
+      background:var(--surface);
+      padding:18px 20px;
+    }
+
+    summary {
+      cursor:pointer;
+      font-weight:700;
+    }
+
+    details p {
+      color:var(--muted);
+      padding-top:12px;
+    }
+
+    .cta {
+      padding:70px 0;
+      background:linear-gradient(
+        135deg,
+        #0b1b25,
+        #071018
+      );
+    }
+
+    .cta-box {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:30px;
+    }
+
+    .contact-grid {
+      display:grid;
+      grid-template-columns:.75fr 1.25fr;
+      gap:28px;
+    }
+
+    .contact-links {
+      display:grid;
+      gap:12px;
+      margin-top:24px;
+    }
+
+    .contact-link {
+      padding:16px;
+      border:1px solid var(--line);
+      border-radius:14px;
+      background:var(--surface);
+    }
+
+    .contact-link span {
+      display:block;
+      color:var(--muted);
+      font-size:.82rem;
+    }
+
+    form {
+      display:grid;
+      gap:14px;
+    }
+
+    .form-row {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:14px;
+    }
+
+    input,
+    select,
+    textarea {
+      width:100%;
+      padding:14px 15px;
+      color:var(--text);
+      background:#09141d;
+      border:1px solid var(--line);
+      border-radius:12px;
+      outline:none;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color:var(--accent);
+      box-shadow:0 0 0 3px rgba(103,232,249,.08);
+    }
+
+    textarea {
+      resize:vertical;
+    }
+
+    #status {
+      min-height:24px;
+      color:var(--muted);
+      font-size:.9rem;
+    }
+
+    footer {
+      border-top:1px solid var(--line);
+      padding:34px 0;
+    }
+
+    .footer-grid {
+      display:grid;
+      grid-template-columns:1fr auto auto;
+      gap:30px;
+      align-items:start;
+    }
+
+    footer p,
+    footer a {
+      color:var(--muted);
+      font-size:.9rem;
+    }
+
+    .footer-links {
+      display:grid;
+      gap:8px;
+    }
+
+    .legal {
+      display:flex;
+      gap:18px;
+      flex-wrap:wrap;
+    }
+
+    .notice {
+      margin-top:18px;
+      padding:14px 16px;
+      border:1px solid var(--line);
+      border-radius:12px;
+      color:var(--muted);
+      font-size:.85rem;
+    }
+
+    .usdt-highlight {
+      border-color:rgba(103,232,249,.25);
+    }
+
+    .usdt-note {
+      margin-top:28px;
+      padding:18px;
+      border:1px solid var(--line);
+      border-radius:14px;
+      background:rgba(103,232,249,.04);
+      color:var(--muted);
+      font-size:.9rem;
+    }
+
+    .usdt-actions {
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:20px;
+    }
+
+    @media (max-width:900px) {
+
+      .grid-4 {
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .grid-3,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns:1fr;
+      }
+
+      .cta-box,
+      .footer-grid {
+        grid-template-columns:1fr;
+        display:grid;
+      }
+    }
+
+    @media (max-width:700px) {
+
+      .container {
+        width:min(calc(100% - 28px),var(--max));
+      }
+
+      .hero {
+        padding:88px 0 72px;
+      }
+
+      section {
+        padding:70px 0;
+      }
+
+      #menu {
+        display:block;
+      }
+
+      nav {
+        position:absolute;
+        left:14px;
+        right:14px;
+        top:70px;
+        padding:14px;
+        display:none;
+        flex-direction:column;
+        align-items:stretch;
+        gap:0;
+        background:#09141d;
+        border:1px solid var(--line);
+        border-radius:16px;
+      }
+
+      nav.open {
+        display:flex;
+      }
+
+      nav a {
+        padding:12px;
+      }
+
+      .grid-4,
+      .form-row {
+        grid-template-columns:1fr;
+      }
+
+      h1 {
+        font-size:clamp(2.6rem,15vw,4.2rem);
+      }
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-  <a class="logo" href="#home">
-    KHAN <span>Consulting</span>
-  </a>
+  <div class="container nav-wrap">
 
-  <button id="menu" aria-label="Open menu">☰</button>
+    <a class="logo"
+       href="#home"
+       aria-label="KHAN Consulting home">
+      KHAN <span>Consulting</span>
+    </a>
 
-  <nav id="nav">
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#why">Why Us</a>
-    <a href="#insights">Insights</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <button id="menu"
+            aria-label="Open navigation"
+            aria-expanded="false">
+      ☰
+    </button>
+
+    <nav id="nav" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#usdt">USDT Buy & Sell</a>
+      <a href="#process">Process</a>
+      <a href="#why">Why Us</a>
+      <a href="#insights">Insights</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+  </div>
 </header>
 
-<main>
 
-  <section id="home" class="hero">
-    <div>
-      <small>WEB3 • BUSINESS DEVELOPMENT • RESEARCH</small>
+<main id="home">
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="container">
+
+      <div class="eyebrow">
+        WEB3 • BUSINESS DEVELOPMENT • RESEARCH
+      </div>
 
       <h1>
-        Building Trust in the <b>Digital Economy</b>
+        Building Trust in the
+        <b>Digital Economy</b>
       </h1>
 
       <p>
-        Strategic business development, research, and partnership support
-        for Web3 and digital asset businesses.
+        Strategic business development, research, partnership discovery,
+        lead generation, outreach and digital asset support for Web3
+        businesses.
       </p>
+
+      <div class="actions">
+
+        <a class="btn btn-primary"
+           href="#contact">
+          Start a Conversation
+        </a>
+
+        <a class="btn btn-secondary"
+           href="#services">
+          Explore Services
+        </a>
+
+      </div>
+
     </div>
+
   </section>
 
+
+  <!-- ABOUT -->
   <section id="about">
-    <small>ABOUT KHAN CONSULTING</small>
 
-    <h2>Research-driven. Relationship-focused.</h2>
+    <div class="container">
 
-    <p>
-      KHAN Consulting is an early-stage business consulting initiative
-      focused on Web3 business development, market research, strategic
-      partnerships, and digital asset industry insights.
-    </p>
+      <div class="section-head">
+
+        <small>
+          ABOUT KHAN CONSULTING
+        </small>
+
+        <h2>
+          Research-driven.
+          Relationship-focused.
+        </h2>
+
+      </div>
+
+      <div class="about-grid">
+
+        <div>
+
+          <p>
+            KHAN Consulting is an early-stage business consulting initiative
+            focused on Web3 business development, market research, strategic
+            partnerships, lead generation, business outreach and digital
+            asset industry insights.
+          </p>
+
+          <p style="margin-top:16px;color:var(--muted)">
+            The approach is built around understanding the market first,
+            identifying relevant opportunities, and supporting professional
+            business conversations.
+          </p>
+
+        </div>
+
+        <div class="card">
+
+          <h3>
+            What clients can expect
+          </h3>
+
+          <div class="checklist">
+
+            <div class="check">
+              <span>
+                <strong>Structured research</strong>
+                before recommendations.
+              </span>
+            </div>
+
+            <div class="check">
+              <span>
+                <strong>Relevant opportunity mapping</strong>
+                instead of generic lists.
+              </span>
+            </div>
+
+            <div class="check">
+              <span>
+                <strong>Professional outreach support</strong>
+                for identified prospects.
+              </span>
+            </div>
+
+            <div class="check">
+              <span>
+                <strong>Clear deliverables</strong>
+                aligned with the agreed requirement.
+              </span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
   </section>
 
+
+  <!-- SERVICES -->
   <section id="services" class="dark">
-    <small>WHAT WE DO</small>
 
-    <h2>Services</h2>
+    <div class="container">
 
-    <div class="grid three">
+      <div class="section-head">
 
-      <article>
-        <h3>01 · Web3 Business Development</h3>
+        <small>
+          WHAT WE DO
+        </small>
+
+        <h2>
+          Services
+        </h2>
+
         <p>
-          Identify opportunities, build relationships, and support strategic
-          growth within the Web3 ecosystem.
+          Focused support across business development,
+          research and partnership discovery.
         </p>
-      </article>
 
-      <article>
-        <h3>02 · Market Research</h3>
-        <p>
-          Research markets, competitors, projects, and emerging opportunities
-          to support better business decisions.
-        </p>
-      </article>
+      </div>
 
-      <article>
-        <h3>03 · Lead Generation</h3>
-        <p>
-          Identify relevant businesses, decision-makers, and potential
-          partnership opportunities.
-        </p>
-      </article>
+      <div class="grid grid-3">
 
-      <article>
-        <h3>04 · Partnership Research</h3>
-        <p>
-          Research and identify potential strategic partners across the
-          digital asset ecosystem.
-        </p>
-      </article>
+        <article class="card">
+          <span class="number">01</span>
+          <h3>Web3 Business Development</h3>
+          <p>
+            Identify opportunities, build relationships and support
+            strategic growth within the Web3 ecosystem.
+          </p>
+        </article>
 
-      <article>
-        <h3>05 · Business Outreach</h3>
-        <p>
-          Support professional outreach and initial business communication
-          with relevant prospects.
-        </p>
-      </article>
+        <article class="card">
+          <span class="number">02</span>
+          <h3>Market Research</h3>
+          <p>
+            Research markets, competitors, projects and emerging
+            opportunities to support better business decisions.
+          </p>
+        </article>
 
-      <article>
-        <h3>06 · Digital Asset Industry Insights</h3>
-        <p>
-          Research trends and developments across Web3 and the digital asset
-          industry.
-        </p>
-      </article>
+        <article class="card">
+          <span class="number">03</span>
+          <h3>Lead Generation</h3>
+          <p>
+            Identify relevant businesses, decision-makers and
+            potential partnership opportunities.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="number">04</span>
+          <h3>Partnership Research</h3>
+          <p>
+            Research and identify potential strategic partners
+            across the digital asset ecosystem.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="number">05</span>
+          <h3>Business Outreach</h3>
+          <p>
+            Support professional outreach and initial business
+            communication with relevant prospects.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="number">06</span>
+          <h3>Digital Asset Industry Insights</h3>
+          <p>
+            Research trends and developments across Web3
+            and the digital asset industry.
+          </p>
+        </article>
+
+      </div>
 
     </div>
+
   </section>
 
-  <section id="why">
-    <small>WHY KHAN CONSULTING</small>
 
-    <h2>Trust is not a claim. It is a practice.</h2>
+  <!-- USDT BUY & SELL -->
+  <section id="usdt">
 
-    <div class="grid four">
+    <div class="container">
 
-      <article>
-        <h3>Research First</h3>
+      <div class="section-head">
+
+        <small>
+          DIGITAL ASSET SERVICES
+        </small>
+
+        <h2>
+          USDT Buy & Sell
+        </h2>
+
         <p>
-          Every opportunity starts with structured research and understanding.
+          Contact KHAN Consulting for USDT buying and selling
+          inquiries, rate discussions and transaction-related support,
+          subject to applicable laws and verification requirements.
         </p>
-      </article>
 
-      <article>
-        <h3>Relationship Focused</h3>
-        <p>
-          We focus on meaningful professional relationships rather than
-          short-term interactions.
-        </p>
-      </article>
+      </div>
 
-      <article>
-        <h3>Web3 Native</h3>
-        <p>
-          Built around the evolving digital asset and Web3 ecosystem.
-        </p>
-      </article>
 
-      <article>
-        <h3>Business Mindset</h3>
-        <p>
-          Focused on practical opportunities, partnerships, and sustainable
-          business development.
-        </p>
-      </article>
+      <div class="grid grid-3">
+
+        <article class="card usdt-highlight">
+
+          <span class="number">
+            USDT BUY
+          </span>
+
+          <h3>
+            Buy USDT
+          </h3>
+
+          <p>
+            Submit an inquiry if you are looking to purchase USDT.
+            Availability, rates and transaction requirements can be
+            discussed before proceeding.
+          </p>
+
+          <div class="usdt-actions">
+
+            <a class="btn btn-primary"
+               href="#contact">
+              Request Buy Rate
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <article class="card usdt-highlight">
+
+          <span class="number">
+            USDT SELL
+          </span>
+
+          <h3>
+            Sell USDT
+          </h3>
+
+          <p>
+            Submit an inquiry if you are looking to sell USDT.
+            Transaction details, rates and verification requirements
+            can be discussed before proceeding.
+          </p>
+
+          <div class="usdt-actions">
+
+            <a class="btn btn-primary"
+               href="#contact">
+              Request Sell Rate
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <article class="card">
+
+          <span class="number">
+            SUPPORT
+          </span>
+
+          <h3>
+            USDT Transaction Inquiry
+          </h3>
+
+          <p>
+            For general USDT inquiries, contact us through email
+            or Telegram with your requirement.
+          </p>
+
+          <div class="usdt-actions">
+
+            <a class="btn btn-secondary"
+               href="https://t.me/KhanUSDTExchange"
+               target="_blank"
+               rel="noopener noreferrer">
+              Contact on Telegram
+            </a>
+
+          </div>
+
+        </article>
+
+      </div>
+
+
+      <div class="usdt-note">
+
+        <strong>Important:</strong>
+        USDT transactions are subject to applicable laws,
+        regulations, KYC/AML requirements and transaction
+        verification where applicable. Do not send passwords,
+        private keys, seed phrases or wallet recovery information.
+
+      </div>
 
     </div>
+
   </section>
 
-  <section id="insights" class="dark">
-    <small>INSIGHTS</small>
 
-    <h2>Ideas for the digital economy.</h2>
+  <!-- PROCESS -->
+  <section id="process">
 
-    <div class="grid three">
+    <div class="container">
 
-      <article>
-        <h3>Web3 Market Research</h3>
+      <div class="section-head">
+
+        <small>
+          HOW WE WORK
+        </small>
+
+        <h2>
+          A simple, research-first process.
+        </h2>
+
         <p>
-          Understanding market movements, projects, and emerging business
-          opportunities.
+          Each engagement can be tailored to the client's
+          specific requirement and scope.
         </p>
-      </article>
 
-      <article>
-        <h3>Strategic Partnerships</h3>
-        <p>
-          Exploring how businesses can create mutually valuable partnerships
-          across Web3.
-        </p>
-      </article>
+      </div>
 
-      <article>
-        <h3>Digital Asset Trends</h3>
-        <p>
-          Tracking developments shaping the future of the digital economy.
-        </p>
-      </article>
+      <div class="grid grid-4 steps">
+
+        <article class="card step">
+          <h3>Discovery</h3>
+          <p>
+            Understand the business objective, market
+            and required outcome.
+          </p>
+        </article>
+
+        <article class="card step">
+          <h3>Research</h3>
+          <p>
+            Map relevant markets, companies, projects,
+            prospects or partners.
+          </p>
+        </article>
+
+        <article class="card step">
+          <h3>Strategy</h3>
+          <p>
+            Organize findings into practical opportunities
+            and next steps.
+          </p>
+        </article>
+
+        <article class="card step">
+          <h3>Execution Support</h3>
+          <p>
+            Support outreach, communication and agreed
+            deliverables.
+          </p>
+        </article>
+
+      </div>
 
     </div>
+
   </section>
 
+
+  <!-- WHY US -->
+  <section id="why" class="dark">
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <small>
+          WHY KHAN CONSULTING
+        </small>
+
+        <h2>
+          Trust is not a claim.
+          It is a practice.
+        </h2>
+
+      </div>
+
+      <div class="grid grid-4">
+
+        <article class="card">
+          <h3>Research First</h3>
+          <p>
+            Every opportunity starts with structured research
+            and understanding.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Relationship Focused</h3>
+          <p>
+            Focus on meaningful professional relationships
+            rather than short-term interactions.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Web3 Native</h3>
+          <p>
+            Built around the evolving digital asset
+            and Web3 ecosystem.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Business Mindset</h3>
+          <p>
+            Focused on practical opportunities, partnerships
+            and sustainable business development.
+          </p>
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- INSIGHTS -->
+  <section id="insights">
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <small>
+          INSIGHTS
+        </small>
+
+        <h2>
+          Ideas for the digital economy.
+        </h2>
+
+        <p>
+          Research themes that can help businesses understand
+          the changing Web3 environment.
+        </p>
+
+      </div>
+
+      <div class="grid grid-3">
+
+        <article class="card">
+
+          <span class="number">
+            RESEARCH
+          </span>
+
+          <h3>
+            Web3 Market Research
+          </h3>
+
+          <p>
+            Understanding market movements, projects and
+            emerging business opportunities.
+          </p>
+
+        </article>
+
+        <article class="card">
+
+          <span class="number">
+            STRATEGY
+          </span>
+
+          <h3>
+            Strategic Partnerships
+          </h3>
+
+          <p>
+            Exploring how businesses can create mutually
+            valuable partnerships across Web3.
+          </p>
+
+        </article>
+
+        <article class="card">
+
+          <span class="number">
+            TRENDS
+          </span>
+
+          <h3>
+            Digital Asset Trends
+          </h3>
+
+          <p>
+            Tracking developments shaping the future
+            of the digital economy.
+          </p>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FAQ -->
+  <section id="faq" class="dark">
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <small>
+          FAQ
+        </small>
+
+        <h2>
+          Common questions.
+        </h2>
+
+      </div>
+
+      <div class="faq">
+
+        <details>
+
+          <summary>
+            What type of businesses can KHAN Consulting support?
+          </summary>
+
+          <p>
+            Businesses and teams looking for Web3 research,
+            business development, partnership discovery,
+            lead generation or outreach support.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            Do you work with international businesses?
+          </summary>
+
+          <p>
+            Yes. KHAN Consulting presents its services for
+            clients worldwide, subject to the scope and nature
+            of the engagement.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            How is pricing determined?
+          </summary>
+
+          <p>
+            Pricing can depend on the research scope, number
+            of targets, deliverables, timeline and level of
+            support required.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            Can you provide a custom research project?
+          </summary>
+
+          <p>
+            Yes. Share the market, companies, competitors,
+            partners or business question you want researched
+            and the required outcome.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            Do you provide USDT buy and sell services?
+          </summary>
+
+          <p>
+            KHAN Consulting provides a contact channel for
+            USDT buy and sell inquiries, rate discussions and
+            transaction-related support, subject to applicable
+            laws, verification and compliance requirements.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            How do I get started?
+          </summary>
+
+          <p>
+            Send your requirement through the contact form,
+            email or Telegram. We can then discuss the scope
+            and appropriate next steps.
+          </p>
+
+        </details>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
   <section class="cta">
-    <h2>Have a Business Opportunity in Mind?</h2>
 
-    <p>
-      Let's discuss how research, business development and strategic
-      partnerships could support your goals.
-    </p>
+    <div class="container cta-box">
+
+      <div>
+
+        <small>
+          READY TO TALK?
+        </small>
+
+        <h2>
+          Have a business opportunity in mind?
+        </h2>
+
+        <p style="color:var(--muted);margin-top:10px">
+          Let's discuss how research, business development,
+          strategic partnerships or digital asset services
+          could support your goals.
+        </p>
+
+      </div>
+
+      <a class="btn btn-primary"
+         href="#contact">
+        Contact KHAN Consulting
+      </a>
+
+    </div>
+
   </section>
 
+
+  <!-- CONTACT -->
   <section id="contact">
 
-    <small>CONTACT</small>
+    <div class="container">
 
-    <h2>Let's Build Something Meaningful</h2>
+      <div class="section-head">
 
-    <p>
-      Email:
-      <a href="mailto:khan.digitalexchange@gmail.com">
-        khan.digitalexchange@gmail.com
-      </a>
-    </p>
+        <small>
+          CONTACT
+        </small>
 
-    <p>
-      Telegram:
-      <a href="https://t.me/KhanUSDTExchange" target="_blank" rel="noopener">
-        @KhanUSDTExchange
-      </a>
-    </p>
+        <h2>
+          Let's build something meaningful.
+        </h2>
 
-    <form id="form">
+        <p>
+          Tell us what you are trying to achieve and
+          what support you need.
+        </p>
 
-      <input
-        name="name"
-        placeholder="Full Name"
-        required
-      >
+      </div>
 
-      <input
-        name="company"
-        placeholder="Company Name"
-        required
-      >
 
-      <input
-        name="email"
-        type="email"
-        placeholder="Business Email"
-        required
-      >
+      <div class="contact-grid">
 
-      <input
-        name="country"
-        placeholder="Country"
-        required
-      >
+        <div>
 
-      <select name="service" required>
-        <option value="">Service Interested In</option>
-        <option>Web3 Business Development</option>
-        <option>Market Research</option>
-        <option>Lead Generation</option>
-        <option>Partnership Research</option>
-        <option>Business Outreach</option>
-        <option>Digital Asset Industry Insights</option>
-      </select>
+          <div class="contact-links">
 
-      <textarea
-        name="message"
-        rows="6"
-        placeholder="Tell us about your requirement"
-        required
-      ></textarea>
+            <a class="contact-link"
+               href="mailto:khan.digitalexchange@gmail.com">
 
-      <button class="btn" type="submit">
-        Send Inquiry
-      </button>
+              <span>Email</span>
 
-      <p id="status"></p>
+              khan.digitalexchange@gmail.com
 
-    </form>
+            </a>
+
+
+            <a class="contact-link"
+               href="https://t.me/KhanUSDTExchange"
+               target="_blank"
+               rel="noopener noreferrer">
+
+              <span>Telegram</span>
+
+              @KhanUSDTExchange
+
+            </a>
+
+          </div>
+
+
+          <div class="notice">
+
+            Please do not submit passwords, private keys,
+            seed phrases, wallet recovery phrases or other
+            sensitive security information through this form.
+
+          </div>
+
+        </div>
+
+
+        <form id="form">
+
+          <div class="form-row">
+
+            <input
+              name="name"
+              autocomplete="name"
+              placeholder="Full Name"
+              required
+            >
+
+            <input
+              name="company"
+              autocomplete="organization"
+              placeholder="Company Name"
+              required
+            >
+
+          </div>
+
+
+          <div class="form-row">
+
+            <input
+              name="email"
+              type="email"
+              autocomplete="email"
+              placeholder="Business Email"
+              required
+            >
+
+            <input
+              name="website"
+              type="url"
+              placeholder="Company Website (optional)"
+            >
+
+          </div>
+
+
+          <div class="form-row">
+
+            <input
+              name="country"
+              autocomplete="country-name"
+              placeholder="Country"
+              required
+            >
+
+
+            <select name="service" required>
+
+              <option value="">
+                Service Interested In
+              </option>
+
+              <option>
+                Web3 Business Development
+              </option>
+
+              <option>
+                Market Research
+              </option>
+
+              <option>
+                Lead Generation
+              </option>
+
+              <option>
+                Partnership Research
+              </option>
+
+              <option>
+                Business Outreach
+              </option>
+
+              <option>
+                Digital Asset Industry Insights
+              </option>
+
+              <option>
+                Custom Research
+              </option>
+
+              <option>
+                USDT Buy
+              </option>
+
+              <option>
+                USDT Sell
+              </option>
+
+              <option>
+                USDT General Inquiry
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <div class="form-row">
+
+            <select name="budget">
+
+              <option value="">
+                Estimated Budget (optional)
+              </option>
+
+              <option>
+                Under $500
+              </option>
+
+              <option>
+                $500 – $1,000
+              </option>
+
+              <option>
+                $1,000 – $2,500
+              </option>
+
+              <option>
+                $2,500+
+              </option>
+
+              <option>
+                Not decided
+              </option>
+
+            </select>
+
+
+            <select name="timeline">
+
+              <option value="">
+                Expected Timeline (optional)
+              </option>
+
+              <option>
+                As soon as possible
+              </option>
+
+              <option>
+                Within 1 week
+              </option>
+
+              <option>
+                Within 1 month
+              </option>
+
+              <option>
+                Flexible
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <textarea
+            name="message"
+            rows="7"
+            placeholder="Tell us about your requirement"
+            required
+          ></textarea>
+
+
+          <button
+            class="btn btn-primary"
+            type="submit">
+
+            Send Inquiry
+
+          </button>
+
+
+          <p
+            id="status"
+            role="status"
+            aria-live="polite">
+          </p>
+
+        </form>
+
+      </div>
+
+    </div>
 
   </section>
 
 </main>
 
+
+<!-- FOOTER -->
 <footer>
-  <b>KHAN Consulting</b>
-  <span>Building Trust in the Digital Economy</span>
-  <span>© 2026 KHAN Consulting</span>
+
+  <div class="container footer-grid">
+
+    <div>
+
+      <b>
+        KHAN Consulting
+      </b>
+
+      <p>
+        Building Trust in the Digital Economy
+      </p>
+
+      <p style="margin-top:8px">
+        © 2026 KHAN Consulting
+      </p>
+
+    </div>
+
+
+    <div class="footer-links">
+
+      <b>
+        Navigate
+      </b>
+
+      <a href="#about">
+        About
+      </a>
+
+      <a href="#services">
+        Services
+      </a>
+
+      <a href="#usdt">
+        USDT Buy & Sell
+      </a>
+
+      <a href="#insights">
+        Insights
+      </a>
+
+      <a href="#contact">
+        Contact
+      </a>
+
+    </div>
+
+
+    <div class="footer-links">
+
+      <b>
+        Connect
+      </b>
+
+      <a href="mailto:khan.digitalexchange@gmail.com">
+        Email
+      </a>
+
+      <a
+        href="https://t.me/KhanUSDTExchange"
+        target="_blank"
+        rel="noopener noreferrer">
+        Telegram
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <div
+    class="container legal"
+    style="margin-top:24px">
+
+    <a href="privacy-policy.html">
+      Privacy Policy
+    </a>
+
+    <a href="terms.html">
+      Terms of Service
+    </a>
+
+    <a href="disclaimer.html">
+      Disclaimer
+    </a>
+
+  </div>
+
 </footer>
 
-<script src="script.js"></script>
+
+<!-- JAVASCRIPT -->
+<script>
+
+  const menu = document.getElementById("menu");
+  const nav = document.getElementById("nav");
+
+  menu.addEventListener("click", () => {
+
+    const open = nav.classList.toggle("open");
+
+    menu.setAttribute(
+      "aria-expanded",
+      String(open)
+    );
+
+  });
+
+
+  nav.querySelectorAll("a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+      nav.classList.remove("open");
+
+      menu.setAttribute(
+        "aria-expanded",
+        "false"
+      );
+
+    });
+
+  });
+
+
+  const form = document.getElementById("form");
+  const status = document.getElementById("status");
+
+
+  form.addEventListener("submit", (event) => {
+
+    event.preventDefault();
+
+    const data = new FormData(form);
+
+
+    const subject = encodeURIComponent(
+      "KHAN Consulting Inquiry - " +
+      (data.get("service") || "Business Inquiry")
+    );
+
+
+    const body = encodeURIComponent(
+`New KHAN Consulting inquiry
+
+Name: ${data.get("name")}
+Company: ${data.get("company")}
+Email: ${data.get("email")}
+Website: ${data.get("website") || "Not provided"}
+Country: ${data.get("country")}
+Service: ${data.get("service")}
+Budget: ${data.get("budget") || "Not provided"}
+Timeline: ${data.get("timeline") || "Not provided"}
+
+Requirement:
+${data.get("message")}`
+    );
+
+
+    status.textContent =
+      "Opening your email client...";
+
+
+    window.location.href =
+      `mailto:khan.digitalexchange@gmail.com?subject=${subject}&body=${body}`;
+
+  });
+
+</script>
 
 </body>
 </html>
